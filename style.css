@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    font-family: 'Roboto', sans-serif; 
+}
+
+body {
+    height: 100vh; /* Full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.bg {
+    width: 100%;
+    height: 100%; /* Full height */
+    position: absolute;
+    z-index: -1;
+    opacity: 0.6;
+    object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+.container {
+    max-width: 600px; /* Set a max width for better layout */
+    padding: 40px; /* Increased padding for more space */
+    background: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center content */
+}
+
+.container h3, p {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px; /* Adjusted font size */
+    margin-bottom: 20px; /* Added space below heading and paragraph */
+}
+
+p {
+    font-size: 17px;
+}
+
+input, textarea {
+    border: 2px solid #3498db; /* Blue border */
+    border-radius: 6px;
+    outline: none;
+    font-size: 16px;
+    width: 100%; /* Full width */
+    margin: 3px 0;
+    padding: 10px; /* Increased padding */
+    transition: border-color 0.3s; /* Smooth border transition */
+}
+
+input:focus, textarea:focus {
+    border-color: #2980b9; /* Darker blue on focus */
+}
+
+.btn {
+    color: white;
+    background: #3498db; /* Blue button */
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none; /* Remove border */
+    border-radius: 14px;
+    cursor: pointer;
+    transition: background 0.3s; /* Smooth background transition */
+    margin: 4px; /* Added margin to buttons */
+    width: 100%; /* Make buttons full width */
+}
+
+.btn:hover {
+    background: #2980b9; /* Darker blue on hover */
+}
+
+.submitMsg {
+    font-size: 20px; /* Adjust font size */
+    text-align: center; /* Center the message */
+    margin-top: 20px; /* Space above the message */
+    margin-bottom: 20px; /* Space below the message */
+    width: 100%; /* Ensure it takes full width */
+}
+
+#returnButton {
+    display: none; /* Hidden by default */
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#returnButton:hover {
+    background-color: #45a049;
+}
